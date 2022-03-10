@@ -3,10 +3,19 @@ import Image from 'next/image';
 const GalleryTimeline = () => {
   const contents = [
     // {
-    //     img: '/images/gallery-1.jpeg',
-    //     title: 'Awal Cerita',
-    //     date: 'Yogyakarta, 2014-2017',
-    //     desc: 'Awalnya kami saling mengenal karena memang kami berada di jurusan dan angkatan yang sama. Kebetulan juga kami tergabung ke dalam satu organisasi yang sama, jadi makin sering berinteraksi deh.',
+    //   title: 'Awal Cerita',
+    //   date: 'Bandar Lampung, 2017-2020',
+    //   desc: 'Awalnya kami saling mengenal karena memang kami berada di program studi yang sama tetapi berbeda 2 angkatan. Kebetulan juga kami tergabung ke dalam satu organisasi yang sama, jadi makin sering berinteraksi deh.',
+    // },
+    // {
+    //   title: 'Masa Awal Pandemi',
+    //   date: 'Bekasi, 2020',
+    //   desc: 'Saat pandemi melanda Indonesia, kami pulang kampung ke Bekasi karena perkuliahan dilakukan secara daring. Pada bulan Oktober 2020, Ari merayakan kelulusan lebih dulu walaupun wisuda secara daring :(',
+    // },
+    // {
+    //   title: 'Lamaran',
+    //   date: 'Bekasi, 20 Maret 2022',
+    //   desc: 'Di tahun ke-5 hubungan kami, akhirnya kami memutuskan untuk melanjutkan hubungan kami ke jenjang yang lebih serius. Dengan dihadiri keluarga, kami melangsungkan acara lamaran secara sederhana. Semoga kedepannya kami bisa menjadi keluarga yang Sakinah, Mawaddah, Warahmah. Mohon Doanya ya!',
     // },
   ];
 
@@ -38,9 +47,9 @@ const GalleryTimeline = () => {
             <div
               className={`bg-white p-4 my-4 border-2 border-theme-orange rounded-xl shadow-md ${colLeft}`}
             >
-              <div className="aspect-w-16 aspect-h-9 rounded-lg border border-gray-00 overflow-hidden mb-2">
+              {/* <div className="aspect-w-16 aspect-h-9 rounded-lg border border-gray-00 overflow-hidden mb-2">
                 <Image src={img} alt={title} layout="fill" objectFit="cover" />
-              </div>
+              </div> */}
               <h3 className="font-title font-black text-gray-700 text-xl">
                 {title}
               </h3>

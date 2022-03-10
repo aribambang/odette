@@ -3,8 +3,9 @@ import Image from 'next/image';
 import copy from 'copy-to-clipboard';
 
 const WALLET = [
-  { txt: 'Gopay', img: '/images/gopay.jpg' },
+  { txt: 'GoPay', img: '/images/gopay.jpg' },
   { txt: 'Dana', img: '/images/dana.jpg' },
+  { txt: 'BCA', img: '/images/bca-logo.png' },
 ];
 
 const AngpaoModal = ({ display, onClose }) => {
@@ -26,7 +27,8 @@ const AngpaoModal = ({ display, onClose }) => {
   };
 
   const handleCopyNumber = () => {
-    copy('085779911732');
+    const number = walletType === 'BCA' ? '6871135549' : '085779911732';
+    copy(number);
     setCopySuccess(true);
     setTimeout(() => setCopySuccess(false), 3000);
   };
@@ -73,12 +75,13 @@ const AngpaoModal = ({ display, onClose }) => {
                   height={200}
                   src={walletImg}
                   alt={walletType}
+                  objectFit="contain"
                 />
               </div>
               <div className="w-3/5 rounded-lg overflow-hidden mx-auto mt-4">
                 <div className="py-2 bg-gray-50">
                   <p className="font-body font-bold text-sm text-gray-700">
-                    085779911732
+                    {walletType === 'BCA' ? '6871135549' : '085779911732'}
                   </p>
                   <p className="font-body font-normal text-sm text-gray-700">
                     A/N Ari Bambang Kurniawan
