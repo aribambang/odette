@@ -18,8 +18,6 @@ const getMessage = async () => {
 
     const rows = response.data.values;
 
-    console.log(rows);
-
     if (rows && rows.length > 0) {
       return rows.slice(Math.max(rows.length - 30, 1)).map((row) => ({
         name: row[1] || '',
