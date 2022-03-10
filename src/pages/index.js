@@ -49,9 +49,9 @@ const Home = () => {
       <main className="z-10 flex flex-col items-center justify-center w-full flex-1 text-center px-10 md:px-0">
         <h4
           className="text-2xl text-center py-4 font-display md:text-4xl text-theme-orange"
-          style={{ fontFamily: 'Sacramento' }}
+          style={{ fontFamily: 'Sacramento', whiteSpace: 'break-spaces' }}
         >
-          Undangan Pernikahan
+          {Boolean(to) ? 'Undangan Pernikahan' : `The Wedding\nof`}
         </h4>
 
         <h3
@@ -70,12 +70,15 @@ const Home = () => {
               - 21 Mei 2022 -
             </h1>
             <div className="mt-6">
-              <p className="font-body text-xl text-theme-orange">
+              <p className="font-body text-md text-theme-orange">
                 Kepada Yth. <br /> Bapak / Ibu / Saudara / i
               </p>
-              <h3 className="font-title font-black text-theme-orange text-3xl mt-1 md:mt-2  md:text-5xl">
+              <h3 className="font-title font-black text-theme-orange text-2xl mt-1 md:mt-2  md:text-4xl">
                 {to.replace('-', ' ')}
               </h3>
+              <p className="my-4 font-body text-xs text-theme-orange">
+                *Mohon maaf apabila ada kesalahan dalam penulisan nama/gelar
+              </p>
             </div>
           </div>
         ) : (
