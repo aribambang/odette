@@ -52,7 +52,7 @@ const Event = () => {
                   Sabtu, 21 Mei 2022
                 </p>
                 <p className="mt-2font-title font-black text-2xl text-theme-orange">
-                  08:00 WIB - Selesai
+                  07:30 WIB - Selesai
                 </p>
               </div>
             </div>
@@ -71,7 +71,7 @@ const Event = () => {
                   Sabtu, 21 Mei 2022
                 </p>
                 <p className="mt-2font-title font-black text-2xl text-theme-orange">
-                  10:00 - 14:00 WIB
+                  10:00 - 13:00 WIB
                 </p>
               </div>
             </div>
@@ -99,7 +99,7 @@ const Event = () => {
                 onClick={handleCheckMap}
               >
                 <p className="font-title font-black text-sm text-white">
-                  Cek Peta
+                  Lihat Peta
                 </p>
               </div>
             </div>

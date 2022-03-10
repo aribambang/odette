@@ -21,7 +21,7 @@ const Profile = () => {
       </div>
       <div className="w-full mt-6 mx-auto md:max-w-lg xl:max-w-2xl">
         <ProfileCard
-          photo="/images/bride.jpg"
+          photo="/images/bride.png"
           photoAlt="Bride"
           icon="/images/icon-bride.png"
           name="Annisa Ayu Sabrina"
@@ -30,7 +30,7 @@ const Profile = () => {
       </div>
       <div className="w-full mt-4 mx-auto md:max-w-lg xl:max-w-2xl">
         <ProfileCard
-          photo="/images/groom.jpg"
+          photo="/images/groom.png"
           photoAlt="Groom"
           icon="/images/icon-groom.png"
           name="Ari Bambang Kurniawan"

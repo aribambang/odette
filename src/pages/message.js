@@ -60,10 +60,12 @@ const Message = ({ prayer }) => {
           Ayu & Ari
         </h3>
       </div>
-      <p className="font-body font-normal text-sm text-gray-700 md:w-1/2 md:text-base lg:w-1/4">
-        Kalian bisa mengirimkan pesan dan doa kalian kepada mempelai melalui
-        form dibawah ya! Pasti akan kami baca kok!
-      </p>
+      <div className="w-3/4 md:w-1/2">
+        <p className="font-body text-gray-700 text-xs md:text-base">
+          Kalian bisa mengirimkan pesan dan doa kalian kepada mempelai melalui
+          form dibawah ya! Pasti akan kami baca kok!
+        </p>
+      </div>
       <div className="w-full min-w-0 overflow-hidden pt-5 pb-6 md:w-3/5 lg:w-1/2">
         <Carousel
           autoPlay
