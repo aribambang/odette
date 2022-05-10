@@ -10,6 +10,10 @@ const MyApp = ({ Component, pageProps, router }) => {
     return <Component {...pageProps} />;
   }
 
+  if (pathname === '/t') {
+    return <Component {...pageProps} />;
+  }
+
   return (
     <Layout pathname={pathname}>
       <Component {...pageProps} />

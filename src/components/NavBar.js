@@ -1,38 +1,58 @@
-import { memo } from 'react';
+import { memo, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const NavBar = ({ pathname }) => {
-  const menus = [
-    {
-      link: '/profile',
-      img: '/images/icon-profile.svg',
-      imgActive: '/images/icon-profile-active.svg',
-      text: 'Profil Mempelai',
-      isActive: pathname === '/profile',
-    },
-    {
-      link: '/event',
-      img: '/images/icon-event.svg',
-      imgActive: '/images/icon-event-active.svg',
-      text: 'Detail Acara',
-      isActive: pathname === '/event',
-    },
-    // {
-    //     link: '/gallery',
-    //     img: '/images/icon-gallery.svg',
-    //     imgActive: '/images/icon-gallery-active.svg',
-    //     text: 'Cerita Kami',
-    //     isActive: pathname === '/gallery',
-    // },
-    {
-      link: '/message',
-      img: '/images/icon-message.svg',
-      imgActive: '/images/icon-message-active.svg',
-      text: 'Titip Pesan',
-      isActive: pathname === '/message',
-    },
-  ];
+  let menus = [];
+  if (pathname.includes('/t')) {
+    menus = [
+      {
+        link: '/t/profile',
+        img: '/images/icon-profile.svg',
+        imgActive: '/images/icon-profile-active.svg',
+        text: 'Profil Mempelai',
+        isActive: pathname === '/t/profile',
+      },
+      {
+        link: '/t/event',
+        img: '/images/icon-event.svg',
+        imgActive: '/images/icon-event-active.svg',
+        text: 'Detail Acara',
+        isActive: pathname === '/t/event',
+      },
+      {
+        link: '/t/message',
+        img: '/images/icon-message.svg',
+        imgActive: '/images/icon-message-active.svg',
+        text: 'Titip Pesan',
+        isActive: pathname === '/t/message',
+      },
+    ];
+  } else {
+    menus = [
+      {
+        link: '/profile',
+        img: '/images/icon-profile.svg',
+        imgActive: '/images/icon-profile-active.svg',
+        text: 'Profil Mempelai',
+        isActive: pathname === '/profile',
+      },
+      {
+        link: '/event',
+        img: '/images/icon-event.svg',
+        imgActive: '/images/icon-event-active.svg',
+        text: 'Detail Acara',
+        isActive: pathname === '/event',
+      },
+      {
+        link: '/message',
+        img: '/images/icon-message.svg',
+        imgActive: '/images/icon-message-active.svg',
+        text: 'Titip Pesan',
+        isActive: pathname === '/message',
+      },
+    ];
+  }
 
   return (
     <nav className="fixed bottom-0 z-20 flex flex-0 items-center justify-center w-screen h-14 bg-white border-t border-gray-200 shadow-nav">
