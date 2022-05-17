@@ -19,7 +19,7 @@ const getMessage = async () => {
     const rows = response.data.values;
 
     if (rows && rows.length > 0) {
-      return rows.slice(Math.max(rows.length - 30, 1)).map((row) => ({
+      return rows.slice(Math.max(rows.length - 256, 1)).map((row) => ({
         name: row[1] || '',
         location: row[2] || '',
         who: row[3] || '',
