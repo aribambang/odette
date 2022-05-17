@@ -87,9 +87,9 @@ const Home = () => {
               Untuk kami, mengundang kalian semua adalah harapan yang dinanti.
               Bertegur sapa, bertemu kerabat lainnya, ceria bercerita, makan
               bersama, bersuka cita. Tapi kita tahu, dunia sedang dilanda
-              bencana yang membuat satu dan lainnya berjarak dengan penutup
-              muka. Semua yang sudah kami siapkan juga harus dibatasi dengan
-              protokol yang ada.
+              bencana yang membuat satu dan lainnya berjarak dengan masker.
+              Semua yang sudah kami siapkan juga harus dibatasi dengan protokol
+              yang ada.
             </p>
             <p className="pt-4">
               Kami, dan segenap keluarga besar dengan berat hati tidak bisa
